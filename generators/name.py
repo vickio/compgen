@@ -23,9 +23,9 @@ class Name(BaseGenerator):
         for noun in ['noun', 'noun2']:
             elements[noun] = choice(self.nouns)
             if not elements[noun].isupper():
-                elements[noun] = elements[noun].capitalize()
-        elements['adjective'] = choice(self.adjectives).capitalize()
-        elements['adjective2'] = choice(self.adjectives).capitalize()
+                elements[noun] = elements[noun].title()
+        elements['adjective'] = choice(self.adjectives).title()
+        elements['adjective2'] = choice(self.adjectives).title()
         
         fname, lname = self.company.founder.split(' ')
         
@@ -36,7 +36,7 @@ class Name(BaseGenerator):
         elements['lname3'] = fake.last_name()
         elements['fname'] = fname
         elements['place'] = choice([self.company.city, self.company.state_name])
-        elements['fakeword'] = fake.word().capitalize()
+        elements['fakeword'] = fake.word().title()
         if len(elements['fakeword']) <= 3:
             elements['fakeword'] = elements['fakeword'].upper()
         
