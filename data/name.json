@@ -1,0 +1,45 @@
+{
+    "templates": [
+        ["$the$noun $company", 20],
+        ["$the$adjective $noun", 10],
+        ["$the$adjective $noun $company", 10],
+        ["$adjective $and $adjective2", 5],
+        ["$fname's $adjective $noun", 15],
+        ["$the$place $noun $company", 15],
+        ["$place $adjective $noun", 10],
+        ["$the$noun $company of $place", 10],
+        
+        ["$lname $and Sons", 5],
+        ["$lname $bros $company", 10],
+        ["$lname $and $lname2", 3],
+        ["$lname $and $lname", 3],
+        ["$lname, $lname2 $and $lname3", 3],
+        ["$the$lname $company", 10],
+        ["$the$lname $noun $company", 10],
+        
+        ["$the$fakeword $company", 2],
+        ["$the$fakeword", 2]
+    ],
+    "bros": [
+        ["Bros", 10],
+        ["Brothers", 10]
+    ],
+    "the": [
+        ["", 10],
+        ["The ", 5]
+    ],
+    "company": [
+        ["Company", 10],
+        ["Assocation", 10],
+        ["Business", 10],
+        ["Shop", 5],
+        ["Store", 5],
+        ["Depot", 2],
+        ["Group", 10],
+        ["Corporation", 10]
+    ],
+    "and": [
+        ["and", 10],
+        ["&", 10]
+    ]
+}

@@ -1,0 +1,46 @@
+body {
+	font-family: "Palatino", "Georgia", serif;
+	font-size: 1em;
+}
+
+a, a:visited, a:active {
+	color: #000000;
+	text-decoration: none;
+}
+
+header, footer {
+	text-align: center;
+}
+
+footer a, footer a:visited {
+	color: #68c4ff;
+}
+
+#cards {
+	max-width: 350px;
+	margin: 0 auto;
+}
+
+.card {
+	padding: 1em;
+	margin: 0.5em;
+	box-shadow: 0 0 0.4em 0.1em #bbbbbb;
+	border-radius: 0.4em;
+}
+
+h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.url, .phone, .address, .city, .founded {
+	display: block;
+	font-size: 0.9em;
+}
+
+.url {
+	text-align: center;
+	padding-bottom: 1em;
+}
