@@ -4,6 +4,8 @@ This program procedurally generates company names and details. There is a live w
 
 Running`main.pl`will print 10 randomly generated companies.
 
+**Requirements:** python>=3.6, `pip install faker`
+
 This project is just for fun. Feel free to contribute. Here are some ideas I have:
 
 ### Improvements
