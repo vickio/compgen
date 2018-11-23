@@ -13,7 +13,7 @@ This project is just for fun. Feel free to contribute. Here are some ideas I hav
 * Improve founder name generation (currently just using Faker)
 * Make shorter domain names for companies with long names
 * Add real city name data instead of the Faker generated cities
-* Update fake word generator that `name.pl`uses to have more variety (currently using Faker)
+* Update fake word generator that `name.py` uses to have more variety (currently using Faker)
 
 ### Additions
 
