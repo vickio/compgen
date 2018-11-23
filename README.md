@@ -2,7 +2,7 @@
 
 This program procedurally generates company names and details. There is a live web version that is generating 100 new companies every five minutes here: https://apps.vickio.net/compgen
 
-Running`main.pl`will print 10 randomly generated companies.
+Running `main.py` will print 10 randomly generated companies.
 
 **Requirements:** python>=3.6, `pip install faker`
 
