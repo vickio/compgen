@@ -14,6 +14,8 @@ class Name(BaseGenerator):
         self.nouns = self._load_txt('nouns.txt')
         self.adjectives = self._load_txt('adjectives.txt')
         
+        self.founder_data = self._load_json('founder.json')
+        
     def generate(self):
         template = Template(self._choose(self.templates))
         elements = {}
@@ -32,8 +34,8 @@ class Name(BaseGenerator):
         fake = self.company._fake
         
         elements['lname'] = lname
-        elements['lname2'] = fake.last_name()
-        elements['lname3'] = fake.last_name()
+        elements['lname2'] = self._choose(self.founder_data['last_name'])
+        elements['lname3'] = self._choose(self.founder_data['last_name'])
         elements['fname'] = fname
         elements['place'] = choice([self.company.city, self.company.state_name])
         elements['fakeword'] = fake.word().title()

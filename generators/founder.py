@@ -8,5 +8,5 @@ class Founder(BaseGenerator):
     
     def generate(self):
         first_name = self._choose(self.data[self.company.founder_gender])
-        last_name = self.company._fake.last_name()
+        last_name = self._choose(self.data['last_name'])
         return ' '.join([first_name, last_name])
