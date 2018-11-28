@@ -37,8 +37,14 @@ class Name(BaseGenerator):
         elements['fname'] = fname
         elements['place'] = choice([self.company.city, self.company.state_name])
         elements['fakeword'] = fake.word().title()
+        
         if len(elements['fakeword']) <= 3:
             elements['fakeword'] = elements['fakeword'].upper()
+        
+        if self.company.founder_gender == 'male':
+            elements['family'] = elements['family_male']
+        else:
+            elements['family'] = elements['family_female']
         
         return template.substitute(elements)
 

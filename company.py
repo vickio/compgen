@@ -4,7 +4,7 @@ import faker
 
 class Company:
     
-    proc_attrs = ['seed', 'name', 'suffix', 'founded', 'founder', 'city', 'state', 'state_name', 'street_address', 'url', 'email_addr', 'phone']
+    proc_attrs = ['seed', 'name', 'suffix', 'founded', 'founder', 'founder_gender', 'city', 'state', 'state_name', 'street_address', 'url', 'email_addr', 'phone']
     
     def __init__(self, seed=None):
         if seed != None: self._seed = seed
