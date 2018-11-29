@@ -4,13 +4,13 @@ This program procedurally generates company names and details. There is a live w
 
 Running `main.py` will print 10 randomly generated companies.
 
-**Requirements:** python>=3.6, `pip install faker`
+**Requirements:** python>=3.6, [Faker](https://github.com/joke2k/faker)
 
 This project is just for fun. Feel free to contribute. Here are some ideas I have:
 
 ### Improvements
 
-* Improve founder name generation (currently just using Faker)
+* ~~Improve founder name generation (currently just using Faker)~~
 * Make shorter domain names for companies with long names
 * Add real city name data instead of the Faker generated cities
 * Update fake word generator that `name.py` uses to have more variety (currently using Faker)
