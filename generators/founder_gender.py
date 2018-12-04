@@ -1,10 +1,11 @@
 from . import BaseGenerator
-from random import randint
+from random import random
 
 class FounderGender(BaseGenerator):
     
     def generate(self):
-        if randint(0, 1) == 0:
+        # citation needed
+        if random() > 1/4:
             return 'male'
         else:
             return 'female'
