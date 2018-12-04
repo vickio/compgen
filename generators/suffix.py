@@ -11,7 +11,7 @@ class Suffix(BaseGenerator):
     
     def generate(self):
         corps = [corp[0] for corp in self.name_data['company']]
-        if re.search('(' + '|'.join(corps) + ')', self.company.name) == None and random.random() > 0.5:
-            return ', ' + self._choose(self.data['suffix'])
+        if re.search('(' + '|'.join(corps) + ')', self.company.name) == None:
+            return self._choose(self.data['suffix'])
         else:
             return ""
