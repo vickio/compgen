@@ -1,6 +1,6 @@
 ## Company Generator, Inc.
 
-This program procedurally generates company names and details. There is a live web version that is generating 100 new companies every five minutes here: https://apps.vickio.net/compgen
+This program procedurally generates company names and details.
 
 Running `main.py` will print 10 randomly generated companies.
 
